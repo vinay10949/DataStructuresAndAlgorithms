@@ -42,6 +42,13 @@ class BST:
 		print(root.data)
 		self.inorder(root.right)
 
+        
+	def preorder(self, root):
+		#set current to root of binary search tree
+		print(root.data)
+		self.inorder(root.left)
+		self.inorder(root.right)
+
 	def min(self, root):
     		#set current to root of binary search tree
 		current=root
@@ -74,3 +81,5 @@ print(b.min(root))
 
 print(b.max(root))
 print(b.search(root,7))
+print("===============")
+print(b.preorder(root))
