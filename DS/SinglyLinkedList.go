@@ -121,6 +121,20 @@ func (l *LinkedList) display()error{
 	return nil
 }
 
+func (l *LinkedList) lengthLinkedList(d *Node)int{
+	if d==nil || d.Next==nil{
+		return 1
+	}
+	return 1+l.lengthLinkedList(d.Next)
+}
+
+func (l *LinkedList) lengthLinkedListV2(count int ,d *Node)int{
+	if d==nil || d.Next==nil{
+		return count
+	}
+	return l.lengthLinkedListV2(count+1,d.Next)
+}
+
 
 func main(){
 
@@ -129,6 +143,7 @@ func main(){
 	l.InsertAtBeginning(14)
 	l.InsertAtBeginning(16)
 	l.InsertAtEnd(18)
+	l.InsertAtEnd(39)
 	err:=l.display()
 	if err!=nil{
 		fmt.Println(err)
@@ -140,5 +155,8 @@ func main(){
 	fmt.Println("After Deletion ")
 	fmt.Println("==================")
 	l.Search(18)
+	fmt.Println("Lenght of linked list ",l.lengthLinkedList(l.head))
+
+	fmt.Println("Lenght of linked list Using Tail Recursion ",l.lengthLinkedListV2(1,l.head))
 
 }
