@@ -1,58 +1,52 @@
 import sys
-class node: 
+class Stack:
 
-    def __init__(self, info): 
-        self.info = info  
-        self.next = None 
-
-
-class Stack: 
-
-    def __init__(self): 
-        self.top = None
-        
-    
-    def isEmpty(self):
-        if self.top is None:
+    def __init__(self):
+        self.stack=[None] * 100
+        self.top=-1
+    def isFull(self):
+        if self.top==100:
             return True
         return False
-    
+
+    def isEmpty(self):
+        if self.top==-1:
+            return True
+        return False
+
     def push(self,data):
-        self.temp=node(data)
-        if self.temp is None:
-            print("Stack overflow")
+        if self.isFull():
+            print("stack overflow")
             return
-        self.temp.next=self.top
-        self.top=self.temp
-    
+        self.top+=1
+        self.stack[self.top]=data
     def pop(self):
         if self.isEmpty():
             print("Stack Underflow")
             sys.exit(0)
-        d=self.top.info
-        self.top=self.top.next    
+        d=self.stack[self.top]
+        self.top-=1
         return d
-    
     def peek(self):
         if self.isEmpty():
             print("Stack Underflow")
             sys.exit(0)
-        d=self.top.info
+        d=self.stack[self.top]
         return d
     def display(self):
         if self.isEmpty():
             print("Stack Underflow")
             sys.exit(0)
-        self.p=self.top
-        while self.top is not None:
-            print(self.p.info)
-            self.p=self.p.next
-            
-    
-        
-if __name__=='__main__': 
+        self.temp=self.top
+        while self.temp>=0:
+            print(self.stack[self.temp])
+            self.temp-=1
 
-    s = Stack()
+
+
+if __name__=='__main__':
+
+    s=Stack()
     while(1):
         print("1.Push\n");
         print("2.Pop\n");
@@ -73,8 +67,5 @@ if __name__=='__main__':
             s.display()
         else:
             sys.exit(0)
-            
-            
-        
 
 
