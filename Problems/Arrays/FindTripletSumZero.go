@@ -42,56 +42,53 @@ A solution set is:
 package main
 
 import (
-    "fmt"
-    "sort"
-    "strconv"
+	"fmt"
+	"sort"
+	"strconv"
 )
 
 var mapEle map[string]bool
 
-func threeSum(arr []int)[][]int{
-    elements:=make([][]int,0)
-    sort.Ints(arr)
+func threeSum(arr []int) [][]int {
+	elements := make([][]int, 0)
+	sort.Ints(arr)
 
-    for v,_:=range arr{
-        l:=v+1
-        r:=len(arr)-1
-        for l<r{
-            sum:= arr[v]+arr[l]+arr[r]
-            if(sum==0){
-                tmp:=[]int{arr[v],arr[l],arr[r]}
-                sort.Ints(tmp)
-                if _,ok:=mapEle[strconv.Itoa(tmp[0])+""+strconv.Itoa(tmp[1])+""+strconv.Itoa(tmp[2])];ok{
-                    l+=1
-                    r+=1
-                    continue
-                }
-                elements=append(elements,[]int{arr[v],arr[l],arr[r]})
-                l+=1
-                r-=1
-                mapEle[strconv.Itoa(tmp[0])+""+strconv.Itoa(tmp[1])+""+strconv.Itoa(tmp[2])]=true
-            }else{
-                if sum<=0{
-                    l+=1
-                }else{
-                    r-=1
-                }
-            }
-        }
+	for v, _ := range arr {
+		l := v + 1
+		r := len(arr) - 1
+		for l < r {
+			sum := arr[v] + arr[l] + arr[r]
+			if sum == 0 {
+				tmp := []int{arr[v], arr[l], arr[r]}
+				sort.Ints(tmp)
+				if _, ok := mapEle[strconv.Itoa(tmp[0])+""+strconv.Itoa(tmp[1])+""+strconv.Itoa(tmp[2])]; ok {
+					l += 1
+					r += 1
+					continue
+				}
+				elements = append(elements, []int{arr[v], arr[l], arr[r]})
+				l += 1
+				r -= 1
+				mapEle[strconv.Itoa(tmp[0])+""+strconv.Itoa(tmp[1])+""+strconv.Itoa(tmp[2])] = true
+			} else {
+				if sum <= 0 {
+					l += 1
+				} else {
+					r -= 1
+				}
+			}
+		}
 
-    }
+	}
 
-
-    return elements
+	return elements
 }
 
-func main(){
-    arr:=[]int{-1, 0, 1, 2, -1, -4 }
-    mapEle=make(map[string]bool)
-    fmt.Println(" Array given ",arr )
-    output:=threeSum(arr)
-    fmt.Println(" Three Sum ",output)
+func main() {
+	arr := []int{-1, 0, 1, 2, -1, -4}
+	mapEle = make(map[string]bool)
+	fmt.Println(" Array given ", arr)
+	output := threeSum(arr)
+	fmt.Println(" Three Sum ", output)
 
 }
-
-

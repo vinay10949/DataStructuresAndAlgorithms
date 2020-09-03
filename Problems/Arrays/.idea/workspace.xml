@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e96b9aa1-6242-4237-adc1-39645cae34fa" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../DS/MaxHeap.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../DS/MaxHeap.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FindTripletSumZero.go" beforeDir="false" afterPath="$PROJECT_DIR$/FindTripletSumZero.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MajorityElement.go" beforeDir="false" afterPath="$PROJECT_DIR$/MajorityElement.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MissingNumber.go" beforeDir="false" afterPath="$PROJECT_DIR$/MissingNumber.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RotateArrayKtimes.go" beforeDir="false" afterPath="$PROJECT_DIR$/RotateArrayKtimes.go" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="GOROOT" path="/usr/local/go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1giftQze66scZjLGy3774XjVgcX" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="go.sdk.automatically.set" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$/go/src/kycService" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="go build FindTripletSumZero.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="Arrays" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/FindTripletSumZero.go" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Build.go build FindTripletSumZero.go" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="583" y="223" width="424" height="487" key="FileChooserDialogImpl" timestamp="1598612219688">
+      <screen x="0" y="30" width="1600" height="870" />
+    </state>
+    <state x="583" y="223" width="424" height="487" key="FileChooserDialogImpl/0.30.1600.870@0.30.1600.870" timestamp="1598612219688" />
+    <state width="1554" height="217" key="GridCell.Tab.0.bottom" timestamp="1598606208103">
+      <screen x="0" y="30" width="1600" height="870" />
+    </state>
+    <state width="1554" height="217" key="GridCell.Tab.0.bottom/0.30.1600.870@0.30.1600.870" timestamp="1598606208103" />
+    <state width="1554" height="217" key="GridCell.Tab.0.center" timestamp="1598606208102">
+      <screen x="0" y="30" width="1600" height="870" />
+    </state>
+    <state width="1554" height="217" key="GridCell.Tab.0.center/0.30.1600.870@0.30.1600.870" timestamp="1598606208102" />
+    <state width="1554" height="217" key="GridCell.Tab.0.left" timestamp="1598606208102">
+      <screen x="0" y="30" width="1600" height="870" />
+    </state>
+    <state width="1554" height="217" key="GridCell.Tab.0.left/0.30.1600.870@0.30.1600.870" timestamp="1598606208102" />
+    <state width="1554" height="217" key="GridCell.Tab.0.right" timestamp="1598606208103">
+      <screen x="0" y="30" width="1600" height="870" />
+    </state>
+    <state width="1554" height="217" key="GridCell.Tab.0.right/0.30.1600.870@0.30.1600.870" timestamp="1598606208103" />
+    <state width="1554" height="269" key="GridCell.Tab.1.bottom" timestamp="1598604275881">
+      <screen x="0" y="30" width="1600" height="870" />
+    </state>
+    <state width="1554" height="269" key="GridCell.Tab.1.bottom/0.30.1600.870@0.30.1600.870" timestamp="1598604275881" />
+    <state width="1554" height="269" key="GridCell.Tab.1.center" timestamp="1598604275881">
+      <screen x="0" y="30" width="1600" height="870" />
+    </state>
+    <state width="1554" height="269" key="GridCell.Tab.1.center/0.30.1600.870@0.30.1600.870" timestamp="1598604275881" />
+    <state width="1554" height="269" key="GridCell.Tab.1.left" timestamp="1598604275880">
+      <screen x="0" y="30" width="1600" height="870" />
+    </state>
+    <state width="1554" height="269" key="GridCell.Tab.1.left/0.30.1600.870@0.30.1600.870" timestamp="1598604275880" />
+    <state width="1554" height="269" key="GridCell.Tab.1.right" timestamp="1598604275881">
+      <screen x="0" y="30" width="1600" height="870" />
+    </state>
+    <state width="1554" height="269" key="GridCell.Tab.1.right/0.30.1600.870@0.30.1600.870" timestamp="1598604275881" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/FindTripletSumZero.go</url>
+          <line>68</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
