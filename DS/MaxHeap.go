@@ -1,35 +1,84 @@
-class Heap:
+package main
 
-	def heapify(self, arr, n, i):
-		largest = i 
-		left = 2*i + 1
-		right = 2*i + 2
+import "fmt"
 
-		if left < n and arr[i] < arr[left]:
-			largest = left
-		if right < n and arr[largest] < arr[right]:
-			largest = right
-		#if root is not largest, swap with largest and
-		#continue heapify
-		if largest != i:
-			arr[i], arr[largest] = arr[largest], arr[i]
-			self.heapify(arr, n, largest)
+type maxHeap struct {
+	arr []int
+}
 
-	def buildMaxHeap(self, arr, n):
-		for i in range(n//2, -1, -1):
-			self.heapify(arr, n, i)
+func newMaxHeap(arr []int) *maxHeap {
+	maxHeap := &maxHeap{
+		arr: arr,
+	}
+	return maxHeap
+}
 
-	def heapsort(self, arr):
+func (m *maxHeap) leftchildIndex(index int) int {
+	return 2*index + 1
+}
 
-		n = len(arr)
-		self.buildMaxHeap(arr, n)
-		for i in range(n-1, 0, -1):
-			arr[i], arr[0] = arr[0], arr[i]
-			self.heapify(arr, i, 0)
+func (m *maxHeap) rightchildIndex(index int) int {
+	return 2*index + 2
+}
 
+func (m *maxHeap) swap(first, second int) {
+	temp := m.arr[first]
+	m.arr[first] = m.arr[second]
+	m.arr[second] = temp
+}
 
-arr = [4, 1, 3, 2, 16, 9, 10, 14, 8, 7]
-h = Heap()
-h.heapsort(arr)
-print(arr)
+func (m *maxHeap) leaf(index int, size int) bool {
+	if index >= (size/2) && index <= size {
+		return true
+	}
+	return false
+}
 
+func (m *maxHeap) downHeapify(current int, size int) {
+	if m.leaf(current, size) {
+		return
+	}
+	smallest := current
+	leftChildIndex := m.leftchildIndex(current)
+	rightRightIndex := m.rightchildIndex(current)
+	if leftChildIndex < size && m.arr[leftChildIndex] < m.arr[smallest] {
+		smallest = leftChildIndex
+	}
+	if rightRightIndex < size && m.arr[rightRightIndex] < m.arr[smallest] {
+		smallest = rightRightIndex
+	}
+	if smallest != current {
+		m.swap(current, smallest)
+		m.downHeapify(smallest, size)
+	}
+	return
+}
+
+func (m *maxHeap) buildMaxHeap(size int) {
+	for index := ((size / 2) - 1); index >= 0; index-- {
+		m.downHeapify(index, size)
+	}
+}
+
+func (m *maxHeap) sort(size int) {
+	m.buildMaxHeap(size)
+	for i := size - 1; i > 0; i-- {
+		// Move current root to end
+		m.swap(0, i)
+		m.downHeapify(0, i)
+	}
+}
+
+func (m *maxHeap) print() {
+	for _, val := range m.arr {
+		fmt.Println(val)
+	}
+}
+
+func main() {
+	inputArray := []int{6, 5, 3, 7, 2, 8, -1}
+	maxHeap := newMaxHeap(inputArray)
+	maxHeap.sort(len(inputArray))
+	maxHeap.print()
+
+}
