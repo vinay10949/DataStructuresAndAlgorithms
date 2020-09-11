@@ -30,6 +30,7 @@ def findMajority(arr,n):
             m_element=arr[i]
             count+=1
     return m_element
+
 def isMajority(arr,n,m_element):
     count=0
     for i in range(n):
